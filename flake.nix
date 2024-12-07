@@ -17,7 +17,7 @@
         };
       in
       {
-        devShell = pkgs.mkShell {
+        devShells.base = pkgs.mkShell {
           buildInputs = [
             pkgs.gcc13
             pkgs.curl
@@ -27,7 +27,7 @@
             # pkgs.rocmPackages.rpp
             # pkgs.rocmPackages.clr
             # pkgs.rocmPackages.hipcc
-            pkgs.rocmPackages
+#            pkgs.rocmPackages
             # 必要に応じて他のROCm関連パッケージを追加
 
             pkgs.gnumake
